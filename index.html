@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        h1#title{
+            line-height: 300px;
+            height: 200px;
+        }
+        div#body{
+            font: normal 18pt Arial;    
+        }
+        input#num1, input#num2{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        input#op{
+            width: 107px;
+            border-radius: 5px;
+        }
+        div#resp{
+            line-height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <script src="Calculadora.js"></script>
+    <h1 id="title">Calculadora</h1>
+    <div id="body">
+        <p>Número 1 | Número 2</p> 
+        <input type="number" value="" name="num1" id="num1">
+        <input type="number" value="" name="num2" id="num2">
+        <br>
+        <input type="button" id="op" value="Somar" onclick="Somar()">
+        <input type="button" id="op" value="Subtrair" onclick="Subtrair()">
+        <br>
+        <input type="button" id="op" value="Multiplicar" onclick="Multiplicação()">
+        <input type="button" id="op" value="Divisão" onclick="Divisão()">
+        <br>
+        <div id="resp"></div>
+    </div>
+</body>
+</html>
