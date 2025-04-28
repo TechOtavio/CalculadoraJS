@@ -7,7 +7,6 @@ function Somar() {
     let soma = num1 + num2
     if(num1 || num2 == Number){
     resp.innerHTML = `O resultado de ${num1} + ${num2} = ${soma}`
-    window.location.reload();
 }else{
     alert('Somente número, Tente Novamente!')
     window.location.reload();
